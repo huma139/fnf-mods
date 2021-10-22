@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HUMA's FNF MODS ARCHIVE</title>
+        <style>
+            html{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body {
+                text-align: center;
+            }
+            p{
+                font-size: 20pt;
+                max-width: 80%; margin: auto;
+            }
+            .darkthemeOpt{
+                margin: auto;
+            }
+
+            h1{
+                font-size: 40pt;
+                background-color: black;
+                color: white; max-width: 80%; 
+                margin-left: auto; margin-right: auto;
+            }
+
+            .darkBody{
+                background-color: black;
+                color: white;
+            }
+
+            .darkHeading{
+                background-color: white;
+                color: black;
+            }
+            .hoverShit{ 
+                width: 150px;
+                transition: transform .1s;
+            margin: auto;}
+            .hoverShit:hover{transform: scale(1.1);}
+
+        </style>
+    </head>
+
+    <body>
+        <div class="darkthemeOpt">
+            <button type="button" onclick="toggle()">Toggle Dark Mode</button>
+        </div>
+        <br>
+        <img src="media/fnf-boyfriend.gif" alt="gà" class="center" style="max-width: 100%; border: 5px outset #50A5EB; margin: auto;">
+        <h1 id="h1Shit">HUMA's FNF MODS ARCHIVE</h1>
+        <p>This is where I put all of my funny FNF mods:</p>
+        <br><br><br><br><br><br>
+            <div class="hoverShit">
+                <a href="BONGOO.zip">
+                    <img src="media/mo.png" alt="maie" width="150px">
+                </a>
+            </div>
+            <br>
+            <div class="hoverShit">
+               <img src="media/icon big.png" alt="maie" width="150px"><br><i>(coming soon)</i>
+            </div>
+        <br><br><br><br><br><br>
+    </body>
+
+    <script>
+    function toggle(){
+        document.body.classList.toggle("darkBody");
+        document.getElementById("h1Shit").classList.toggle("darkHeading");
+    }
+    </script>
+
+</html>
