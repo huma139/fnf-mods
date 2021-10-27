@@ -26,7 +26,7 @@
 
         <br><br><br>
         
-        <button id="onWin" class="button" type="button" onclick="window.location.href='downloadChamber/BONGOO.zip'">Download .zip mod</button>
+        <button class="button" type="button" onclick="window.location.href='downloadChamber/BONGOO.zip'">Download .zip mod</button>
         <button class="button" type="button" onclick="window.location.href='index.html'">Go Back</button>
 
         <br><br><br><br><br>
@@ -52,27 +52,6 @@
                 
                 <p>Xong! Bây giờ có thể mở <b>PsychEngine.exe</b>  lên và vào Story Mode, nếu thấy có week mới sau Week 6 thì là OK.</p>                
             </div>
-
-            <div id="onMobiIns">
-                <p>Ơ kìa! Hình như bạn đang trên điện thoại thì phải.
-                    <br>Mod này hiện chỉ chơi được trên Windows thôi :( Sorry...</p>
-            </div>
         </div>
-
-        <script>
-            var sss = document.getElementById("onWin");
-            var Wins = document.getElementById("onWinIns");
-            var Mins = document.getElementById("onMobiIns");
-            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                sss.style.display = "none";
-                Wins.style.display = "none";
-                Mins.style.display = "block";
-            }
-            else {
-                sss.style.display = "inline";
-                Wins.style.display = "block";
-                Mins.style.display = "none";
-            }
-        </script>
     </body>
 </html>
