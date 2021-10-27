@@ -26,32 +26,58 @@
 
         <br><br><br>
         
-        <button class="button" type="button" onclick="window.location.href='downloadChamber/BONGOO.zip'">Download .zip mod</button>
+        <button class="button" type="button" onclick="downloadShit()">Download mod</button>
+        <button class="button" type="button" onclick="window.location.href='https://gamebanana.com/mods/331285'">GameBanana Page</button>
         <button class="button" type="button" onclick="window.location.href='index.html'">Go Back</button>
 
         <br><br><br><br><br>
 
         <div class="ins">
-            <h1>
-                Cách để cho mod vào Psych Engine
-                <br>
-                <p style="font-size: 15pt;">(nếu bạn không biết cho vào ://)</p>
-            </h1>
-
             <div id="onWinIns">
-                <a href="https://github.com/ShadowMario/FNF-PsychEngine/releases">
-                    <p>Tải Psych Engine về trước (phiên bản từ 0.4.2 trở lên)</p>
-                </a>
+                <h1>
+                    Cách để cho mod vào Psych Engine
+                    <br>
+                    <p style="font-size: 15pt;">(nếu bạn không biết cho vào ://)</p>
+                </h1>
+
                 
-                <p>Giải nén tất cả các file trong zip này và để đè lên tất cả file trong folder "mod/"<br>
-                (đơn giản là kéo hết mấy folder trong đây ra để vào trong folder "mod")</p>
-                
-                <img src="media/yoooo.png" alt="như thế này nèeee :P" style="max-width: 100%; margin: auto;">
-                
-                <p>Nếu nó có hỏi gì thì cứ bấm Yes hoặc là Yes to All</p>
-                
-                <p>Xong! Bây giờ có thể mở <b>PsychEngine.exe</b>  lên và vào Story Mode, nếu thấy có week mới sau Week 6 thì là OK.</p>                
+                    <a href="https://github.com/ShadowMario/FNF-PsychEngine/releases">
+                        <p>Tải Psych Engine về trước (phiên bản từ 0.4.2 trở lên)</p>
+                    </a>
+                    
+                    <p>Giải nén tất cả các file trong zip này và để đè lên tất cả file trong folder "mod/"<br>
+                    (đơn giản là kéo hết mấy folder trong đây ra để vào trong folder "mod")</p>
+                    
+                    <img src="media/yoooo.png" alt="như thế này nèeee :P" style="max-width: 100%; margin: auto;">
+                    
+                    <p>Nếu nó có hỏi gì thì cứ bấm Yes hoặc là Yes to All</p>
+                    
+                    <p>Xong! Bây giờ có thể mở <b>PsychEngine.exe</b>  lên và vào Story Mode, nếu thấy có week mới sau Week 6 thì là OK.</p>                
+            </div>
+
+            <div id="onMobile">
+                <p>Tải về file .zip, trong đó là file .apk để install</p>
             </div>
         </div>
+
+        <script>
+            onMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            function downloadShit() {
+                if (onMobile) {
+                    window.location.href='https://gamebanana.com/dl/681934';
+                } else {
+                    window.location.href='downloadChamber/BONGOO.zip';
+                }
+            }
+
+            if (onMobile) {
+                document.getElementById('onMobile').style.display = "block";
+                document.getElementById('onWinIns').style.display = "none";
+            } else {
+                document.getElementById('onMobile').style.display = "none";
+                document.getElementById('onWinIns').style.display = "block";
+            }
+        </script>
     </body>
 </html>
